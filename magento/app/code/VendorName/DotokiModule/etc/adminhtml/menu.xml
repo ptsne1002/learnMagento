@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="VendorName_DotokiModule::Dotoki"
+            title="Menu Titile"
+            module="VendorName_DotokiModule"
+            sortOrder="57"
+            parent="Magento_Backend::marketing"
+            resource="VendorName_DotokiModule::Dotoki"
+        />
+        <add
+            id="VendorName_DotokiModule::index"
+            title="Dotoki Action Link"
+            module="VendorName_DotokiModule"
+            sortOrder="55"
+            parent="VendorName_DotokiModule::Dotoki"
+            action="dotokimodule/index/index"
+            resource="VendorName_DotokiModule::index"
+        />
+        <add
+            id="VendorName_DotokiModule::index2"
+            title="Dotoki Action Link 2"
+            module="VendorName_DotokiModule"
+            sortOrder="40"
+            parent="VendorName_DotokiModule::Dotoki"
+            action="dotokimodule/index/index2"
+            resource="VendorName_DotokiModule::index"
+        />
+        <add
+            id="VendorName_DotokiModule::subscription"
+            title="Subscriptions"
+            module="VendorName_DotokiModule"
+            sortOrder="70"
+            parent="VendorName_DotokiModule::Dotoki"
+            action="dotokimodule/subscription/"
+            resource="VendorName_DotokiModule::subscription"
+        />
+    </menu>
+    <menu>
+        <add
+            id="VendorName_DotokiModule::dotokimenu"
+            title="Dotoki-Menu"
+            module="VendorName_DotokiModule"
+            sortOrder="41"
+            resource="VendorName_DotokiModule::menu"/>
+        <add
+            id="VendorName_DotokiModule::parent"
+            title="Dokoki Post"
+            module="VendorName_DotokiModule"
+            sortOrder="10"
+            resource="ViMagento_HelloWorld::menu"
+            parent="VendorName_DotokiModule::dotokimenu"/>
+        <add
+            id="VendorName_DotokiModule::post"
+            title="Dotoki Posts"
+            module="VendorName_DotokiModule"
+            sortOrder="10"
+            action="dotokimodule/index/index2"
+            resource="VendorName_DotokiModule::post"
+            parent="VendorName_DotokiModule::parent"/>
+        <add
+            id="VendorName_DotokiModule::configuration"
+             title="Dotoki-Configuration"
+             module="VendorName_DotokiModule"
+             sortOrder="20"
+             parent="VendorName_DotokiModule::parent"
+             action="adminhtml/system_config"
+             resource="VendorName_DotokiModule::parent"/>
+        <add
+            id="VendorName_DotokiModule::parent2"
+            title="Dokoki DataGrid"
+            module="VendorName_DotokiModule"
+            sortOrder="30"
+            resource="ViMagento_HelloWorld::menu"
+            parent="VendorName_DotokiModule::dotokimenu"/>
+        <add
+            id="VendorName_DotokiModule::subscription2"
+            title="Grid with Block"
+            module="VendorName_DotokiModule"
+            sortOrder="70"
+            parent="VendorName_DotokiModule::parent2"
+            action="dotokimodule/subscription/"
+            resource="VendorName_DotokiModule::subscription"
+        />
+        <add
+            id="Packt_HelloWorld::component"
+            title="Components"
+            module="VendorName_DotokiModule"
+            sortOrder="80"
+            parent="VendorName_DotokiModule::parent2"
+            action="dotokimodule/component/"
+            resource="VendorName_DotokiModule::helloworld"
+        />
+    </menu>
+</config>

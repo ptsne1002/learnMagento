@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="packt">
+        <job name="dotoki_check_subscriptions"
+             instance="VendorName\DotokiModule\Model\Cron"
+             method="checkSubscriptions">
+            <schedule>* * * * *</schedule>
+        </job>
+    </group>
+</config>
