@@ -1,6 +1,7 @@
 <?php
 
-namespace VendorName\DotokiModule\Controller\Adminhtml\GridUiComponent;
+
+namespace VendorName\DotokiModule\Controller\Adminhtml\GridMovie;
 
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Backend\App\Action;

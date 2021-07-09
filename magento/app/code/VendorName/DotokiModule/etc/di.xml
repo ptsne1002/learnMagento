@@ -13,4 +13,35 @@
             <argument name="resourceModel" xsi:type="string">VendorName\DotokiModule\Model\ResourceModel\GridUiComponent</argument>
         </arguments>
     </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">subscription_id
+                <item name="magenest_movie_actor_listing_data_source" xsi:type="string">vendorname_dotokimodule_subscription_collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="vendorname_dotokimodule_subscription_collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">vendorname_dotokimodule_subscription</argument>
+            <argument name="resourceModel" xsi:type="string">VendorName\DotokiModule\Model\ResourceModel\GridUiComponent</argument>
+        </arguments>
+    </virtualType>
+<!--ResourceModel-->
+
+<!--    GridMovie -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="magenest_moviegrid_listing_data_source" xsi:type="string">magenest_movie_collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="magenest_movie_collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">magenest_movie</argument>
+            <argument name="resourceModel" xsi:type="string">VendorName\DotokiModule\Model\ResourceModel\GridMovie</argument>
+        </arguments>
+    </virtualType>
+
 </config>

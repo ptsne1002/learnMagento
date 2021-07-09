@@ -8,6 +8,6 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
 
     protected function _construct()
     {
-        $this->_init('VendorName\DotokiModule\Model\GridUiComponent', 'VendorName\DotokiModule\Model\ResourceModel\GridUiComponent');
+        $this->_init('VendorName\DotokiModule\Model\GridUiComponent', 'VendorName\DotokiModule\Model\ResourceModel\GridNotification');
     }
 }

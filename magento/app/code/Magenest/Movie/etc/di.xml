@@ -13,4 +13,5 @@
             <argument name="resourceModel" xsi:type="string">Magenest\Movie\Model\ResourceModel\GridUIComponent</argument>
         </arguments>
     </virtualType>
+
 </config>

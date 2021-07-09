@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\DotokiModule\Controller\Adminhtml\GridUiComponent;
+namespace Magenest\Movie\Controller\Adminhtml\GridMovie;
 
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Backend\App\Action;
@@ -18,7 +18,7 @@ class Index extends \Magento\Backend\App\Action
     public function execute()
     {
         $resultPage = $this->_pageFactory->create();
-        $resultPage->getConfig()->getTitle()->prepend(__('Pts Hello World Listing'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Grid Movie Listing'));
         return $resultPage;
     }
 }

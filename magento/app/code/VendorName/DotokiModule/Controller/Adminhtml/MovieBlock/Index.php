@@ -1,11 +1,11 @@
 <?php
 
-namespace Magenest\Movie\Controller\GridBlock;
+namespace VendorName\DotokiModule\Controller\Adminhtml\MovieBlock;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 
-class Index extends \Magento\Framework\App\Action\Action
+class Index extends \Magento\Backend\App\Action
 {
     protected $resultPageFactory;
 
@@ -33,3 +33,4 @@ class Index extends \Magento\Framework\App\Action\Action
         return $this->_authorization ->isAllowed('VendorName_DotokiModule::subscription');
     }
 }
+
